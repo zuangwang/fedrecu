@@ -70,4 +70,3 @@ Key parameters can be adjusted in the respective files:
 - Model architecture: `models.py`
 - Training algorithms: `trainers.py`
 - Optimization settings: `optimizers.py`
-- Plotting preferences: `plot.py`
