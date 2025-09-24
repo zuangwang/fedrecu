@@ -6,37 +6,26 @@ This repository contains code and results for federated learning experiments com
 
 ```
 fedlin2/
-├── CNN_CGT.py              # CNN model with CGT (Compressed Gradient Transfer)
 ├── main.py                 # Main execution script
 ├── models.py               # Neural network model definitions
 ├── optimizers.py           # Custom optimizers for federated learning
-├── plot.py                 # Plotting utilities for result visualization
-├── test.py                 # Testing utilities
 ├── trainers.py             # Training algorithms and federated learning methods
 ├── data/                   # Dataset storage
 │   ├── cifar-10-python.tar.gz
 │   ├── cifar-100-python.tar.gz
 │   └── [extracted datasets]
 ├── results/                # Experimental results
-│   ├── cifar10_e3000_homFalse_0_L_2_dir_0.1/
-│   ├── cifar10_e3000_homFalse_0_L_2_dir_1/
-│   ├── cifar10_e3000_homFalse_0_L_2_dir_10/
-│   ├── cifar100_e3000_homFalse_0_L_2_dir_0.1/
-│   ├── cifar100_e3000_homFalse_0_L_2_dir_1/
-│   └── cifar100_e3000_homFalse_0_L_2_dir_10/
-├── save/                   # Saved model checkpoints and additional results
-└── fedlin2_eps/           # Generated EPS plots (archived)
+│   ├── cifar10_e2000_homFalse_0_L_2_dir_0.1/
+│   ├── cifar10_e2000_homFalse_0_L_2_dir_1/
+│   ├── cifar10_e2000_homFalse_0_L_2_dir_10/
+│   ├── cifar100_e4000_homFalse_0_L_2_dir_0.1/
+│   ├── cifar100_e4000_homFalse_0_L_2_dir_1/
+│   └── cifar100_e4000_homFalse_0_L_2_dir_10/
 ```
 
 ## Algorithms Compared
 
-The experiments compare four federated learning algorithms:
-
-- **FedAvg** (Black) - Federated Averaging
-- **FedProx** (Red) - Federated Proximal
-- **FedNova** (Orange) - Federated Nova
-- **Scaffnew** (Blue) - SCAFFOLD with improvements
-
+The experiments compare four federated learning algorithms
 ## Datasets and Configurations
 
 ### Datasets
@@ -56,33 +45,6 @@ The experiments compare four federated learning algorithms:
 ```bash
 python main.py
 ```
-
-### Generating Plots
-The `plot.py` script automatically generates visualization plots for experimental results:
-
-```bash
-# Generate plots for a specific experiment
-python plot.py /path/to/experiment.csv
-
-# Generate plots for all experiments
-for csv_file in $(find results -name "*.csv"); do
-    python plot.py "$csv_file"
-done
-```
-
-### Plot Types Generated
-Each experiment generates three types of plots:
-1. **Train Accuracy Comparison** - Training accuracy over communication rounds
-2. **Loss Comparison** - Loss values over communication rounds  
-3. **Test Accuracy Comparison** - Test accuracy over communication rounds
-
-## Plot Features
-
-- **Consistent Color Scheme**: Each algorithm has a fixed color across all plots
-- **High-Quality Output**: Supports both PNG (for preview) and EPS (for publication)
-- **Publication Ready**: Clean styling with proper labels and legends
-- **Automatic Processing**: Batch processing of multiple experiments
-
 ## Results Structure
 
 Each experiment directory contains:
