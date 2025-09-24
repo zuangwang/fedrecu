@@ -10,6 +10,7 @@ fedlin2/
 ├── models.py               # Neural network model definitions
 ├── optimizers.py           # Custom optimizers for federated learning
 ├── trainers.py             # Training algorithms and federated learning methods
+├── Code_for_Appendix_A2/   # Code for Appendix_A2
 ├── data/                   # Dataset storage
 │   ├── cifar-10-python.tar.gz
 │   ├── cifar-100-python.tar.gz
