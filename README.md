@@ -83,12 +83,6 @@ Each experiment generates three types of plots:
 - **Publication Ready**: Clean styling with proper labels and legends
 - **Automatic Processing**: Batch processing of multiple experiments
 
-### Color Mapping
-- **Black**: Scaffnew
-- **Red**: Algorithm2
-- **Orange**: SCAFFOLD
-- **Blue**: FedLin2/FedLin
-
 ## Results Structure
 
 Each experiment directory contains:
@@ -108,13 +102,6 @@ test_accuracy_values
 loss_values
 ```
 
-## Dependencies
-
-- Python 3.x
-- matplotlib
-- numpy
-- [Other dependencies as needed]
-
 ## Configuration
 
 Key parameters can be adjusted in the respective files:
@@ -122,18 +109,3 @@ Key parameters can be adjusted in the respective files:
 - Training algorithms: `trainers.py`
 - Optimization settings: `optimizers.py`
 - Plotting preferences: `plot.py`
-
-## Citation
-
-If you use this code in your research, please cite:
-```
-[Add appropriate citation information]
-```
-
-## License
-
-[Add license information]
-
-## Contact
-
-[Add contact information]
