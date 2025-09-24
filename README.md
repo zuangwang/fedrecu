@@ -1,11 +1,11 @@
-# FedLin2 - Federated Learning Experiments
+# Federated Learning Experiments
 
-This repository contains code and results for federated learning experiments comparing different algorithms on CIFAR-10 and CIFAR-100 datasets.
+This repository contains code and results for federated learning experiments comparing different algorithms on generated data, CIFAR-10, and CIFAR-100 datasets.
 
 ## Project Structure
 
 ```
-fedlin2/
+fedrecu/
 ├── main.py                 # Main execution script
 ├── models.py               # Neural network model definitions
 ├── optimizers.py           # Custom optimizers for federated learning
